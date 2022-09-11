@@ -1,6 +1,6 @@
 $UserPasswordExpirationList = Get-ADUser -searchbase 'OU=Users,DC=mydomain,DC=local' -filter {Enabled -eq $True -and PasswordNeverExpires -eq $False} -Properties "UserPrincipalName", "msDS-UserPasswordExpiryTimeComputed" | Select-Object -Property "UserPrincipalName",@{Name="ExpiryDate";Expression={[datetime]::FromFileTime($_."msDS-UserPasswordExpiryTimeComputed")}}
 
-$CurrentDate = Get-Date
+$Date = Get-Date
 
 $ExpirationList = @()
 
