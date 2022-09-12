@@ -13,3 +13,7 @@ Please edit before use:
 3. Line 16: -From **'Password Reminder <passwordreminder@mydomain.com>'**
 4. Line 16: -To **'Admin <admin@mydomain.com>'**
 5. Line 16: -SmtpServer **'smtp.server.com'**
+
+## performance-statistics.ps1
+
+Checks CPU, RAM, Ethernet and Wi-Fi statistics every 30 seconds.
