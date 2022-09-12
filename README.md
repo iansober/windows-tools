@@ -10,6 +10,6 @@ Please edit before use:
 
 1. Line 1: -searchbase **'OU=Users,DC=mydomain,DC=local'**
 2. If you need another amount of days then 7, you should edit line 8: $User.ExpiryDate - $Date).Days -le **8**
-3. Line 16: -From 'Password Reminder <passwordreminder@mydomain.com>'
-4. Line 16: -To 'Admin <admin@mydomain.com>'
-5. Line 16: -SmtpServer 'smtp.server.com'
+3. Line 16: -From **'Password Reminder <passwordreminder@mydomain.com>'**
+4. Line 16: -To **'Admin <admin@mydomain.com>'**
+5. Line 16: -SmtpServer **'smtp.server.com'**
