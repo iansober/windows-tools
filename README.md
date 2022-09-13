@@ -1,6 +1,8 @@
-# windows-server-tools
+# windows-tools
 
 Some simple tools for windows server automatization or simplification of routine tasks. It is simple to do it yourself or you can just download, make some edits and use for your own goodness.
+
+Mostly for the servers but some scripts useful for workstations.
 
 ## expired-in-7-days-ADUC.ps1
 
