@@ -19,3 +19,15 @@ Please edit before use:
 ## performance-statistics.ps1
 
 Checks CPU, RAM, Ethernet and Wi-Fi statistics every 30 seconds.
+
+## ost-to-another-disk.ps1
+
+Tool for moving users .ost files to another disk to free-up space on system drive. The script creates link to the moved .ost file so Outlook keeps working as usual.
+
+The script makes folders named as users with existing .ost files in choosen directory. Then it moves .ost and created link in %localappdata%\microsoft\outlook directory. 
+
+Edit line 10 for setting your path: $Destination = **'D:\'** + ($UserFolder | Select-Object -ExpandProperty Name) + '\'
+
+The script should be run with administrator permissions so it will be able to move all the users' .ost.
+
+**I highly recommend to set the destination path to the NTFS drive so the users' permissions to the .ost files will be saved.**
