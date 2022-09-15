@@ -29,5 +29,3 @@ The script makes folders named as users with existing .ost files in choosen dire
 Edit line 10 for setting your path: $Destination = **'D:\'** + ($UserFolder | Select-Object -ExpandProperty Name) + '\'
 
 The script should be run with administrator permissions so it will be able to move all the users' .ost.
-
-**I highly recommend to set the destination path to the NTFS drive so the users' permissions to the .ost files will be saved.**
